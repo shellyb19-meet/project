@@ -35,7 +35,7 @@ def get_all_stories():
 	return stories
 
 def create_event(name,time,place,info,picture,coming):
-	event_object = Event(name=name, time=time , place=place, info=info, picture=picture, coming=coming)
+	event_object = Event(name=name, time=time , date=date, place=place, info=info, picture=picture, coming=coming)
 	session.add(event_object)
 	session.commit()
 

@@ -22,6 +22,7 @@ class Event(Base):
 	id = Column(Integer, primary_key=True)
 	name = Column(String)
 	time=Column(String)
+	date=Column(String)
 	place=Column(String)
 	info=Column(String)
 	picture=Column(String)
