@@ -16,3 +16,24 @@ class Product(Base):
 	types=Column(String)
 	count=Column(Integer)
 	stock=Column(String)
+
+class Event(Base):
+	__tablename__ = "events"
+	id = Column(Integer, primary_key=True)
+	name = Column(String)
+	time=Column(String)
+	place=Column(String)
+	info=Column(String)
+	picture=Column(String)
+	coming=Column(Boolean)
+	
+class Story(Base):
+	__tablename__ = "stories"
+	id = Column(Integer, primary_key=True)
+	title = Column(String)
+	story=Column(String)
+	name=Column(String)
+	age=Column(Integer)
+	gender=Column(String)
+	place=Column(String)
+	types=Column(String)
