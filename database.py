@@ -47,3 +47,8 @@ def get_all_events():
 	events = session.query(Event).all()
 	return events
 
+create_story("title", "story story story story", "shelly" , 16, "female", "jerusalem", "types")
+
+create_story("title2", "story story story story", "bamba" , 163, "female", "tel aviv", "types2")
+
+create_story("title3", "story story story story", "shorts" , 12, "male", "jerusalem", "types")
