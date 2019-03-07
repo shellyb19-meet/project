@@ -39,3 +39,4 @@ class Story(Base):
 	gender=Column(String)
 	place=Column(String)
 	types=Column(String)
+	week=Column(Boolean)
