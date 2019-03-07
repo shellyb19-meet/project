@@ -26,7 +26,8 @@ class Event(Base):
 	info=Column(String)
 	picture=Column(String)
 	coming=Column(Boolean)
-	
+	soon=Column(Boolean)
+
 class Story(Base):
 	__tablename__ = "stories"
 	id = Column(Integer, primary_key=True)

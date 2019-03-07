@@ -8,8 +8,8 @@ Base.metadata.create_all(engine)
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
-def create_event(name,time,place,info,picture,coming):
-	event_object = Event(name=name, time=time , place=place, info=info, picture=picture, coming=coming)
+def create_event(name,time,place,info,picture,coming,soon):
+	event_object = Event(name=name, time=time , place=place, info=info, picture=picture, coming=coming, soon=soon)
 	session.add(event_object)
 	session.commit()
 
